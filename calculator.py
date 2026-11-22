@@ -10,8 +10,8 @@ def multiply(a, b):
     return a * b
 
 
-def divide(a, b):
-    return a / b
+def divide(a, b, places=2):
+    return round(a / b, places)
 
 
 OPERATIONS = {
