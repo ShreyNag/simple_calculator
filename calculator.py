@@ -11,6 +11,8 @@ def multiply(a, b):
 
 
 def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
     return a / b
 
 
@@ -38,7 +40,11 @@ def main():
         except ValueError:
             print("Please enter valid numbers.")
             continue
-        print("Result:", OPERATIONS[op](a, b))
+
+        try:
+            print("Result:", OPERATIONS[op](a, b))
+        except ValueError as error:
+            print("Error:", error)
 
 
 if __name__ == "__main__":

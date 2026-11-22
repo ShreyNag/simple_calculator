@@ -4,7 +4,7 @@ A small command-line calculator written in Python, built to practise Git and Git
 
 ## Features
 
-Supports addition, subtraction, multiplication and division.
+Supports addition, subtraction, multiplication and division, with a clear error message for division by zero.
 
 ## How to run
 
